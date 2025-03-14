@@ -1,0 +1,40 @@
+<?php
+
+namespace DeBetooging\OptionsPages;
+
+use DeBetooging\Abstracts\OptionsPage as AbstractsOptionsPage;
+use DeBetooging\Contracts\OptionsPage;
+use StoutLogic\AcfBuilder\FieldsBuilder;
+
+class {{class_name}} extends AbstractsOptionsPage implements OptionsPage
+{
+
+    protected string $slug = '{{slug}}';
+
+    public function __construct()
+    {
+        $this->title = __('{{name}}', 'de-betooging');
+        $this->menuTitle = __('{{name}}', 'de-betooging');
+    }
+
+    protected function fields(FieldsBuilder $fieldsBuilder) : FieldsBuilder
+    {
+        $fieldsBuilder = $this->addItems($fieldsBuilder);
+        return $fieldsBuilder;
+    }
+
+    private function addItems(FieldsBuilder $settings) : FieldsBuilder
+    {
+        $settings
+            ->addRepeater('items', [
+                'label' => __('Items', 'de-betooging'),
+                'layout' => 'block',
+                'button_label' => __('Add item', 'de-betooging'),
+            ])
+                ->addText('title', [
+                    'label' => __('Title', 'de-betooging'),
+                ])
+            ->endRepeater();
+        return $settings;
+    }
+}

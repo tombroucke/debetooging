@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sage\n"
+"POT-Creation-Date: 2025-03-14 11:25+0100\n"
+"PO-Revision-Date: 2025-03-14 11:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: resources/views/404.blade.php:8
+#, fuzzy
+msgid "Sorry, but the page you are trying to view does not exist."
+msgstr "Sorry, maar de pagina die u probeert te bekijken bestaat niet."
+
+#: resources/views/components/spinner.blade.php:5
+msgid "Loading..."
+msgstr "Laden…"
+
+#: resources/views/forms/search.blade.php:12
+#, fuzzy
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: resources/views/index.blade.php:20 resources/views/search.blade.php:15
+#, fuzzy
+msgid "Sorry, no results were found."
+msgstr "Helaas, er zijn geen resultaten gevonden."
+
+#: resources/views/layouts/app.blade.php:22
+msgid "Skip to content"
+msgstr "Ga naar de inhoud"
+
+#: resources/views/partials/entry-meta.blade.php:9
+msgid "By"
+msgstr "Door"
+
+#: app/Blocks/Hero.php:99
+msgid "Hero"
+msgstr "Hero"
+
+#: app/Blocks/Hero.php:101
+msgid "Display a static hero on top of your page"
+msgstr "Toon een statische hero bovenaan uw pagina"
+
+#: app/Blocks/Hero.php:129
+msgid "Background image"
+msgstr "Achtergrondafbeelding"
+
+#: app/Blocks/SocialMedia.php:95
+#, fuzzy
+msgid "Social Media"
+msgstr "Social media"
+
+#: app/Blocks/SocialMedia.php:97
+msgid "A simple Social Media block."
+msgstr "Een eenvoudig Social Media-blok."
+
+#: app/Fields/PageSettings.php:22
+#, fuzzy
+msgid "Alternative header"
+msgstr "Alternatieve kop"
+
+#: app/Fields/PageSettings.php:23
+#, fuzzy
+msgid "Show the alternative, small header"
+msgstr "Toon de alternatieve, kleine koptekst"
+
+#: app/View/Composers/Breadcrumb.php:34
+msgid "Home"
+msgstr "Home"
+
+#: app/View/Composers/Breadcrumb.php:93
+#, fuzzy
+msgid "Search"
+msgstr "Zoek"
+
+#: app/View/Composers/Pagination.php:49
+msgid "Previous"
+msgstr "Vorige"
+
+#: app/View/Composers/Pagination.php:50
+msgid "Next"
+msgstr "Volgende"
+
+#: app/View/Composers/Post.php:48
+#, fuzzy
+msgid "Latest Posts"
+msgstr "Laatste Berichten"
+
+#. translators: %s is replaced with the search query
+#: app/View/Composers/Post.php:62
+#, php-format
+msgid "Search Results for %s"
+msgstr "Zoekresultaten voor %s"
+
+#: app/View/Composers/Post.php:68
+#, fuzzy
+msgid "Not Found"
+msgstr "Niets gevonden"
+
+#: app/filters.php:15
+msgid "Read more"
+msgstr "Lees meer"
+
+#: app/setup.php:104
+msgid "Primary Navigation"
+msgstr "Primaire navigatie"
+
+#: app/setup.php:105
+msgid "Credits Navigation"
+msgstr "Credits navigatie"
+
+#: app/setup.php:166
+msgid "Footer 1"
+msgstr "Footer 1"
+
+#: app/setup.php:175
+msgid "Footer 2"
+msgstr "Footer 2"
+
+#: config/html-forms-submissions.php:6
+msgid "Anonymous"
+msgstr "Anoniem"
+
+#: functions.php:17
+#, fuzzy
+msgid "Error locating autoloader. Please run <code>composer install</code>."
+msgstr "Fout bij het lokaliseren van de autoloader. Voer <code>composer install</code> uit."
+
+#. translators: %s is replaced with the relative file path
+#: functions.php:57
+#, php-format
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr "Fout bij het lokaliseren van <code>%s</code> voor opname."
+
+#. Theme Name of the plugin/theme
+#, fuzzy
+msgid "sage"
+msgstr "Sage &rsaquo; Fout"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid "Custom theme for sage"
+msgstr "Aangepast thema voor sage"
+
+#. Author of the plugin/theme
+msgid "Tom Broucke"
+msgstr "Tom Broucke"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://tombroucke.be/"
+msgstr "https://tombroucke.be/"

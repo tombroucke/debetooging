@@ -1,0 +1,111 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+
+		"layout": {
+			"contentSize": "768px",
+			"wideSize": "950px"
+		},
+
+    "color": {
+      "palette": [
+        {
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#be1622"
+        },
+        {
+          "name": "Blue",
+          "slug": "blue",
+          "color": "#3775a3"
+        },
+        {
+          "name": "Warning",
+          "slug": "warning",
+          "color": "#eb8a53"
+        },
+        {
+          "name": "Beige",
+          "slug": "beige",
+          "color": "#f9f8e5"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "color": "#f5f5f5"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000"
+        }
+      ],
+      "custom": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "defaultGradients": false
+    },
+
+    "custom": {
+      "spacing": {
+        "small": "max(1.25rem, 5vw)",
+        "medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
+        "large": "clamp(4rem, 10vw, 8rem)",
+        "outer": "var(--wp--custom--spacing--small, 1.25rem)"
+      },
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+
+    "spacing": {
+      "padding": true,
+      "units": ["px", "%", "em", "rem", "vw", "vh"]
+    },
+
+    "typography": {
+      "customFontSize": false
+    },
+
+    "blocks": {
+      "core/group": {
+        "background": {
+          "backgroundImage": true
+        }
+      },
+
+      "acf/container": {
+        "background": {
+          "backgroundImage": true
+        }
+      }
+    }
+
+  },
+
+	"styles": {
+
+		"blocks": {
+			"core/columns": {
+				"spacing": {
+					"margin": {
+						"top": "0px",
+						"bottom": "0px"
+					}
+				}
+			},
+
+			"core/image": {
+				"spacing": {
+					"margin": {
+						"top": "0px",
+						"bottom": "0px"
+					}
+				}
+			}
+		}
+
+	}
+}

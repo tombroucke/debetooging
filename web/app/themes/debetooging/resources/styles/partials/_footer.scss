@@ -1,0 +1,25 @@
+.content-info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 10px solid var(--wp--preset--color--primary);
+
+  &__widgets {
+    a {
+      color: $blue;
+    }
+  }
+
+  &__widgets-2 {
+    margin-top: 25px;
+
+    a {
+      color: $black;
+    }
+  }
+
+  &__credits {
+    a {
+      color: $black;
+    }
+  }
+}
