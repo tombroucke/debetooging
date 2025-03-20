@@ -82,6 +82,7 @@
     .navigation-primary {
       position: absolute;
       z-index: 1;
+      top: 100px;
       right: calc(var(--wp--custom--spacing--outer) * -1);
       left: calc(var(--wp--custom--spacing--outer) * -1);
       padding: 15px var(--wp--custom--spacing--outer) 15px var(--wp--custom--spacing--outer);
@@ -90,7 +91,7 @@
       pointer-events: none;
       text-align: right;
       transform: translateY(-100%);
-      transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out 0.15s;
+      transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out 0.10s;
 
       .alternative-header & {
         background: var(--wp--preset--color--primary);
