@@ -25,6 +25,11 @@
     height: var(--header-height);
   }
 
+  .brand {
+    position: relative;
+    z-index: 2;
+  }
+
   &--default {
     .brand {
       top: 1rem;
@@ -32,6 +37,15 @@
 
       svg {
         height: 12em;
+
+        @include media-breakpoint-down(xl) {
+          height: 15vw;
+        }
+
+        @include media-breakpoint-down(lg) {
+          width: 190px;
+          height: auto;
+        }
       }
     }
 
@@ -61,6 +75,89 @@
       .logo-red,
       .logo-blue {
         fill: var(--wp--preset--color--white);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .navigation-primary {
+      position: absolute;
+      z-index: 1;
+      top: var(--header-height);
+      right: calc(var(--wp--custom--spacing--outer) * -1);
+      left: calc(var(--wp--custom--spacing--outer) * -1);
+      padding: 15px var(--wp--custom--spacing--outer) 15px var(--wp--custom--spacing--outer);
+      background-color: $white;
+      opacity: 0;
+      pointer-events: none;
+      text-align: right;
+      transform: translateY(calc(calc(100% + var(--header-height)) * -1));
+      transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out 0.15s;
+
+      .alternative-header & {
+        background: var(--wp--preset--color--primary);
+      }
+
+      .primary-nav-open & {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.navbar-toggler div {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  transform: rotate(0deg);
+
+  span {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--wp--preset--color--primary);
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    .alternative-header & {
+      background: var(--wp--preset--color--white);
+    }
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 12px;
+    }
+
+    &:nth-child(3) {
+      top: 24px;
+    }
+  }
+
+  .primary-nav-open & {
+    span {
+      &:nth-child(1) {
+        top: 12px;
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        left: -60px;
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 12px;
+        transform: rotate(-135deg);
       }
     }
   }
