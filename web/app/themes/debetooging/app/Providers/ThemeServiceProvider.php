@@ -77,6 +77,10 @@ class ThemeServiceProvider extends SageServiceProvider
             return $block->preview;
         });
 
+        Blade::if('frontpage', function () {
+            return is_front_page();
+        });
+
         Blade::directive('echoWhen', function ($expression) {
             [$condition, $message] = explode(',', $expression, 2);
 

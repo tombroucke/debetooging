@@ -83,6 +83,7 @@ module.exports = {
 		/^bg-(?!.*(?:gradient|opacity-10|opacity-25|opacity-50|opacity-75|opacity-100)$)(?!.*-50$)(?!.*-tertiary$)(?!.*-secondary$)(?!.*-emphasis$)(?!.*-subtle$).*/,
 		/^text-(?!.*(?:reset|muted|opacity-25|opacity-50|opacity-75|opacity-100)$)(?!.*-50$)(?!.*-tertiary$)(?!.*-secondary$)(?!.*-emphasis$).*/,
 		/^row-cols(-.*)?$/,
+    'form-text',
 		// Cookie consent
 		/^cc(_.*)?$/,
 		/^cc(-.*)?$/,

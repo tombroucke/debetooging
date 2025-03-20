@@ -19,7 +19,11 @@
           href="{{ home_url('/') }}"
           aria-label="{{ __('Home', 'sage') }}"
         >
-          @svg('logo-de-betooging')
+          @svg('logo-de-betooging', 'logo')
+
+          @frontpage
+            @svg('vrolijke-vrienden', 'baseline')
+          @endfrontpage
         </a>
         @includeWhen(has_nav_menu('primary_navigation'), 'partials.navigation-primary')
       </div>

@@ -34,7 +34,8 @@
       top: 1rem;
       left: 0;
 
-      svg {
+      .logo {
+        display: block;
         height: 12em;
 
         @include media-breakpoint-down(xl) {
@@ -45,6 +46,14 @@
           width: 190px;
           height: auto;
         }
+      }
+
+      .baseline {
+        position: absolute;
+        top: calc(100% + 1rem);
+        display: block;
+        width: 70%;
+        margin-left: 15%;
       }
     }
 
@@ -63,7 +72,7 @@
     }
 
     .brand {
-      svg {
+      .logo {
         height: 4em;
       }
 
