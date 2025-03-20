@@ -55,8 +55,7 @@ add_filter('render_block', function ($blockContent, $block) {
 }, 10, 2);
 
 add_filter('body_class', function ($classes) {
-
-    if (get_field('alternative_header')) {
+    if (get_field('alternative_header') || is_404() || is_single() || is_archive() || is_home()) {
         $classes[] = 'alternative-header';
     }
 

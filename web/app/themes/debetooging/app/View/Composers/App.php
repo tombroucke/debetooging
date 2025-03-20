@@ -24,7 +24,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
-            'alternativeHeader' => get_field('alternative_header'),
+            'alternativeHeader' => get_field('alternative_header') || is_404() || is_single() || is_archive() || is_home(),
         ];
     }
 

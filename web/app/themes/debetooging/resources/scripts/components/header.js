@@ -1,5 +1,3 @@
-import Headroom from "headroom.js";
-
 export default class Header {
   constructor(el) {
     el ? this.init(el) : console.error('No header found');
@@ -10,32 +8,7 @@ export default class Header {
     this.dropdowns = this.el.querySelectorAll('.menu-item--has-submenu');
     this.navbarToggler = this.el.querySelector('.navbar-toggler');
 
-    this.headroom().init();
     this.bindEvents();
-  }
-
-  headroom() {
-    const header = this;
-    const headroom  = new Headroom(this.el, {
-      offset: {
-          up: 100,
-          down: 50,
-      },
-      classes : {
-        initial : "banner",
-        pinned : "banner--pinned",
-        unpinned : "banner--unpinned",
-        top : "banner--top",
-        notTop : "banner--not-top",
-        bottom : "banner--bottom",
-        notBottom : "banner--not-bottom",
-        frozen: "banner--frozen",
-      },
-      onUnpin : function() {
-        header.closeSubmenus();
-      },
-    });
-    return headroom;
   }
 
   bindEvents() {

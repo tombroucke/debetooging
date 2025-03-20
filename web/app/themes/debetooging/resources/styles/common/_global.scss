@@ -3,14 +3,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-  --header-height: 99px;
-}
-
-body {
-  padding-top: var(--header-height);
-}
-
 h1 {
   margin-bottom: 2.5rem;
   color: var(--wp--preset--color--blue);
@@ -20,6 +12,12 @@ h1 {
 h2 {
   margin-bottom: 2rem;
   color: var(--wp--preset--color--primary);
+  font-weight: 700;
+}
+
+h3 {
+  margin-bottom: 1.3rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -34,17 +32,13 @@ figure img {
 
 main {
   @include contains-block-elements;
-
-  a {
-    font-weight: 700;
-    text-decoration: none;
-  }
 }
 
 ul,
 ol,
 p {
-  + h2 {
+  + h2,
+  + h3 {
     margin-top: 2rem;
   }
 }
